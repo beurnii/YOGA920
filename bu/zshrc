@@ -1,0 +1,15 @@
+# oh-my-zsh settings
+ZSH=/usr/share/oh-my-zsh/
+ZSH_THEME="af-magic"
+DISABLE_AUTO_UPDATE="true"
+
+plugins=(git systemd pip)
+source $ZSH/oh-my-zsh.sh
+
+#Custom input
+alias update='yay -Syu'
+alias fhd='xrandr --output eDP1 --mode 1920x1080; xinput --set-prop 12 "libinput Accel Speed" 0'
+alias uhd='xrandr --output eDP1 --mode 3840x2160; xinput --set-prop 12 "libinput Accel Speed" 1 '
+alias uninstall='yay -R'
+alias mirrorRank='sudo pacman-mirrors --country all && sudo pacman -Syyu'
+
